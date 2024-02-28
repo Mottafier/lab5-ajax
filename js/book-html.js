@@ -6,7 +6,7 @@ function loadHTMLFile(filePath) {
 
     xhr.onload = function() {
         if (xhr.status >= 200 && xhr.status < 300) {
-            document.getElementById("details").innerHTML  = "<p>HIIII</p>"
+            document.getElementById("details").innerHTML  = xhr.responseText;
         };
     };
 
@@ -21,7 +21,6 @@ function image_opacity(){
     }
 }
 
-//document.getElementById("details").innerHTML = xhr.responseText;
 var donQuixoteImage = document.getElementById("don-quixote-img");
 donQuixoteImage.addEventListener("click", function() {
     image_opacity();
