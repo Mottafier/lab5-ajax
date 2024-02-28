@@ -9,8 +9,8 @@ function loadXMLFile(index) {
             
             var parser = new DOMParser();
             xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");
-
-            document.getElementById("details").innerHTML = xmlDoc.getElementsByTagName("book")[index].innerHTML
+            
+            document.getElementById("details").innerHTML = "<p>hi</p>"//xmlDoc.getElementsByTagName("book")[index].innerHTML
         };
     };
 
