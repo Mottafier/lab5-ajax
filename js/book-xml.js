@@ -1,5 +1,5 @@
 
-function loadXMLFile() {
+function loadXMLFile(index) {
     var xhr = new XMLHttpRequest();
 
     xhr.open('GET', "data/book-data.xml", true);
