@@ -10,7 +10,7 @@ function loadXMLFile(index) {
             var parser = new DOMParser();
             xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");
             
-            document.getElementById("details").innerHTML = xmlDoc.getElementsByTagName("book")[index].childNodes[0].innerHTML
+            document.getElementById("details").innerHTML = xmlDoc.getElementsByTagName("book")[index].childNodes[0].nodeValue;
         };
     };
 
